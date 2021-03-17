@@ -6,8 +6,8 @@
   "author": "Roman Chasovitin <chasovitin.r@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "PORT=3030 webpack serve --mode=development",
-    "build": "webpack --mode=production",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
