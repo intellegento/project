@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
 </head>
 
 <body>
-<!--<div id="root"></div>-->
+<article class="container-fluid">
+    <header class="container header">
+        <a class="logotype" href="/">
+            <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
+        </a>
+        <nav class="nav-list">
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#useful">Useful</a>
+            <a class="nav-item" href="#service">Service</a>
+            <a class="nav-item" href="#team">Our Team</a>
+            <a class="nav-item" href="#contact">Contacts</a>
+        </nav>
+        <button type="button" name="Login">Sing in</button>
+    </header>
 
-<h1>daskjdjsakldjkl</h1>
+    <section class="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta, inventore est hic recusandae laboriosam
+            minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate itaque commodi maiores quas.
+        </p>
+    </section>
+</article>
+
+
 </body>
 </html>

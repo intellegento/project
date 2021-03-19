@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .logotype {
+    text-decoration: none;
+    line-height: 0;
+
+    img {
+      width: 190px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
-@import 'reset.scss';
-@import 'variables.scss';
-@import 'core.scss';
+@import 'variables';
+@import "bootstrap";
+@import 'core';
+@import "header";
 
 h1 {
   color: darkblue;
