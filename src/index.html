@@ -9,28 +9,61 @@
 </head>
 
 <body>
-<article class="container-fluid">
-    <header class="container header">
-        <a class="logotype" href="/">
+<article class="container-fluid container-fluid-header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container container-fluid-nav">
+          <a class="navbar-brand" href="#">
             <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
-        </a>
-        <nav class="nav-list">
-            <a class="nav-item" href="#home">Home</a>
-            <a class="nav-item" href="#useful">Useful</a>
-            <a class="nav-item" href="#service">Service</a>
-            <a class="nav-item" href="#team">Our Team</a>
-            <a class="nav-item" href="#contact">Contacts</a>
-        </nav>
-        <button type="button" name="Login">Sing in</button>
-    </header>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Useful</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              
+              <button class="btn btn-outline-success" type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-    <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta, inventore est hic recusandae laboriosam
-            minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate itaque commodi maiores quas.
-        </p>
-    </section>
+    <div class="container container-promo">
+        <div class="promo-text">
+            <h1 class="promo-title">Lorem ipsum <br>dolor sit amet</h1>
+            <div class="promo-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta, inventore est hic
+                recusandae laboriosam minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate itaque commodi
+                maiores quas.</div>
+            <div class="promo-btns">
+                    <button class="promo-btn" id="buyNowBtn">Buy Now</button>
+                    <button class="promo-btn">Try for free</button>
+                </div>
+        </div>
+        <div class="promo-video">
+            <video id="video" width="600" height="320" src="resource/videoplayback.mp4" poster="resource/poster.jpg"></video>
+            <div class="promo-play" id="playVideo">
+                <div><i class="fas fa-play"></i></div>
+                
+                Watch the video
+            </div>
+        </div>
+    </div>
 </article>
 
 

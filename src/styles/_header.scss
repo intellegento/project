@@ -1,16 +1,80 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.container-fluid-header {
+  background: url(../resource/promo-bg.jpg) center center/cover no-repeat;
+  min-height: 580px;
+  padding: 50px 0;
 
-  .logotype {
-    text-decoration: none;
-    line-height: 0;
+  .navbar-nav {
+    margin: auto;
+  }
 
-    img {
-      width: 190px;
+  .nav-item {
+    padding-right: 25px;
+  }
+
+  .nav-item > .nav-link{
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .nav-item > .nav-link:hover{
+    color: rgb(94, 93, 93);    
+  }
+
+  .btn {
+    color: #fff;
+    width: 80px;    
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    background: none;
+    transition: color .2s linear;
+    font-size: 14px;
+  }
+
+  .container-promo {
+    display: flex;
+    margin-top: 167px;
+    justify-content: space-between;
+    align-items: center;
+
+    .promo-text {
+      width: 45%;
+
+      .promo-title {
+        color: #ffffff;
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 65px;
+        text-transform: uppercase;
+      }
+      .promo-descr {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 35px;
+        opacity: .8;
+      }
+      .promo-btns {
+        margin-top: 38px;
+        
+        .promo-btn {
+          padding: 22px 43px;
+          border-radius: 5px;
+          box-shadow: 0 5px 5px rgba(0,0,0,0.2);;
+          background: #fff;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #061e37;
+          border: none;
+          margin-right: 30px;
+          transition: linear .2s;
+        }
+      }      
+    }
+
+    
+    .promo-video {
+      width: 45%;
     }
   }
+
 }
+
