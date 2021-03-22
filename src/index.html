@@ -35,36 +35,40 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacts</a>
               </li>
-            </ul>
-            <form class="d-flex">
-              
-              <button class="btn btn-outline-success" type="submit">Sign Up</button>
-            </form>
+            </ul>                        
+              <button class="btn btn-outline-success" type="button">Sign Up</button>
+            
           </div>
         </div>
       </nav>
 
     <div class="container container-promo">
-        <div class="promo-text">
-            <h1 class="promo-title">Lorem ipsum <br>dolor sit amet</h1>
-            <div class="promo-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta, inventore est hic
-                recusandae laboriosam minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate itaque commodi
-                maiores quas.</div>
-            <div class="promo-btns">
-                    <button class="promo-btn" id="buyNowBtn">Buy Now</button>
-                    <button class="promo-btn">Try for free</button>
-                </div>
+      <div class="row">
+        <div class="promo-text col-6">
+          <h1 class="promo-title">Lorem ipsum <br>dolor sit amet</h1>
+          <div class="promo-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta, inventore est hic
+            recusandae laboriosam minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate itaque commodi
+            maiores quas.</div>
+          <div class="promo-btns">
+            <button class="promo-btn" id="buyNowBtn">Buy Now</button>
+            <button class="promo-btn">Try for free</button>
+          </div>
         </div>
-        <div class="promo-video">
-            <video id="video" width="600" height="320" src="resource/videoplayback.mp4" poster="resource/poster.jpg"></video>
+        <div class="promo-video col-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video autoplay loop class="embed-responsive-item" poster=<%=require('./resource/poster.jpg')%>
+                <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+            </video>
             <div class="promo-play" id="playVideo">
-                <div>
-                  <img src="resource/play-solid.svg" alt="Play Video">
-                </i></div>
-                
-                Watch the video
-            </div>
+              <div>
+                <img alt="Play Video" src=<%=require('./resource/play-solid.svg')%> >
+              </div>
+              
+              Watch the video
+          </div>
         </div>
+        </div>
+      </div>
     </div>
 </article>
 

@@ -31,10 +31,11 @@
   }
 
   .container-promo {
-    display: flex;
+    display: flex;    
     margin-top: 167px;
     justify-content: space-between;
     align-items: center;
+
 
     .promo-text {
       width: 45%;
@@ -58,7 +59,7 @@
         .promo-btn {
           padding: 22px 43px;
           border-radius: 5px;
-          box-shadow: 0 5px 5px rgba(0,0,0,0.2);;
+          box-shadow: 0 5px 5px rgba(0,0,0,0.2);
           background: #fff;
           text-transform: uppercase;
           font-weight: 700;
@@ -72,7 +73,25 @@
 
     
     .promo-video {
+      position: relative;
       width: 45%;
+
+      .embed-responsive {
+        position: relative;
+        .promo-play {
+          position: absolute;
+          top: auto;
+          margin: auto;
+          width: 60px;
+          color: #061e37;
+          font-size: 12px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+      
     }
   }
 
