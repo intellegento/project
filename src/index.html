@@ -10,264 +10,289 @@
 
 <body>
 <section class="container-fluid container-fluid-header">
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="container container-fluid-nav">
-      <a class="navbar-brand" href="#">
-        <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Useful</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
-          </li>
-        </ul>
-        <button class="btn btn-outline-success" type="button">Sign Up</button>
-
-      </div>
-    </div>
-  </nav>
-
-  <div class="container container-promo">
-    <div class="row">
-      <div class="col">
-        <div class="promo-text">
-          <h1 class="promo-title">Lorem ipsum <br>dolor sit amet</h1>
-          <div class="promo-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta,
-            inventore est hic
-            recusandae laboriosam minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate itaque
-            commodi
-            maiores quas.</div>
-          <div class="promo-btns">
-            <button class="promo-btn" id="buyNowBtn">Buy Now</button>
-            <button class="promo-btn">Try for free</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="promo-video">
-          <div class="embed-responsive">
-            <video autoplay loop class="embed-responsive-item" poster=<%=require('./resource/poster.jpg')%>
-              <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
-            </video>
-            <div class="promo-play" id="playVideo">
-              <div>
-                <div></div>
-              </div>
-  
-              Watch the video
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container container-fluid-nav">
+            <a class="navbar-brand" href="#">
+                <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Useful</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success" type="button">Sign Up</button>
             </div>
-          </div>
         </div>
-      </div>
+    </nav>
+    <div class="container container-promo">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <div class="promo-text">
+                    <h1 class="promo-title">Lorem ipsum <br>dolor sit amet</h1>
+                    <div class="promo-descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta, inventore est hic
+                        recusandae laboriosam minima modi laborum ipsam, in aut eum. Iure fugiat praesentium voluptate
+                        itaque commodi maiores quas.
+                    </div>
+                    <div class="promo-btns">
+                        <button class="promo-btn" id="buyNowBtn" name="Buy now" type="button">Buy Now</button>
+                        <button class="promo-btn" name="Try for free" type="button">Try for free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 promo-video embed-responsive d-flex align-items-center justify-content-center">
+                <video class="embed-responsive-item" poster=<%=require('./resource/poster.jpg')%>
+                    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                </video>
+                <button type="button" name="Play promo video" class="promo-play" id="playVideo"></button>
+            </div>
+        </div>
     </div>
 </section>
-
-  <section class="useful">
-    <div class="container">
-      <h2 class="title">Easy &amp; Useful</h2>
-      <div class="subtitle">
-        Project Management Tool
-      </div>
-      <div class="descr">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud
-      </div>
-      <div class="useful-content">
-        
-          <div class="row">
-            <div class="col">
-              <div class="useful-icon">
-                <img class="calendar" src="<%=require('./resource/icons/calendar.svg')%>" alt="Calendar">
-              </div>
-              <div class="useful-text">
-                <h3 class="useful-title">
-                  Title Goes Here
-                </h3>
-                <div class="useful-descr">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua.
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="useful-icon">
-                <img class="user" src="<%=require('./resource/icons/user.svg')%>" alt="User">
-              </div>
-              <div class="useful-text">
-                <h3 class="useful-title">
-                  Title Goes Here
-                </h3>
-                <div class="useful-descr">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua.
-                </div>
-              </div>
-            </div>
-          
-          
-            <div class="col">
-              <div class="useful-icon">
-                <img class="fire" src="<%=require('./resource/icons/fire.svg')%>" alt="Fire">
-              </div>
-              <div class="useful-text">
-                <h3 class="useful-title">
-                  Title Goes Here
-                </h3>
-                <div class="useful-descr">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua.
-                </div>
-              </div>
-            </div>
-          </div>        
-        
-      </div>
-      <button class="useful-btn">Get started</button>
+<section class="useful container">
+    <h2 class="title">Easy &amp; Useful</h2>
+    <div class="subtitle">Project Management Tool</div>
+    <div class="descr">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     </div>
-  </section>
-
-  <section class="container">  
+    <div class="useful-content">
+        <div class="row">
+            <div class="col-12 col-md-4 useful-el">
+                <div class="useful-icon">
+                    <img class="calendar" src="<%=require('./resource/icons/calendar.svg')%>" alt="Calendar">
+                </div>
+                <div class="useful-text">
+                    <h3 class="useful-title">Title Goes Here</h3>
+                    <div class="useful-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 useful-el">
+                <div class="useful-icon">
+                    <img class="user" src="<%=require('./resource/icons/user.svg')%>" alt="User">
+                </div>
+                <div class="useful-text">
+                    <h3 class="useful-title">Title Goes Here</h3>
+                    <div class="useful-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 useful-el">
+                <div class="useful-icon">
+                    <img class="fire" src="<%=require('./resource/icons/fire.svg')%>" alt="Fire">
+                </div>
+                <div class="useful-text">
+                    <h3 class="useful-title">Title Goes Here</h3>
+                    <div class="useful-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="useful-btn">Get started</button>
+</section>
+<section class="container">
     <div class="row row-items">
-      <div class="col col-biss">
-        <div class="counts-wrap">
-          <div class="counts-icon">
-            <div class="counts-biss">
-          
-            </div>           
-          </div>
-          <div class="counts-text">
-            12000+<br>
-            Business
-          </div>
-        </div>
-      </div>
-      <div class="col col-down">
-        <div class="counts-wrap">
-          <div class="counts-icon">
-            <div class="counts-down">
-
+        <div class="col col-biss">
+            <div class="counts-wrap">
+                <div class="counts-icon">
+                    <div class="counts-biss"></div>
+                </div>
+                <div class="counts-text">
+                    12000+<br>Business
+                </div>
             </div>
-          </div>
-          <div class="counts-text">
-            60000+<br>
-            Downloads
-          </div>
         </div>
-      </div>
-      <div class="col col-instal">
-        <div class="counts-wrap">
-          <div class="counts-icon">
-            <div class="counts-instal">
-
+        <div class="col col-down">
+            <div class="counts-wrap">
+                <div class="counts-icon">
+                    <div class="counts-down"></div>
+                </div>
+                <div class="counts-text">
+                    60000+<br>Downloads
+                </div>
             </div>
-          </div>
-          <div class="counts-text">
-            30000+<br>
-            Free Install </div>
         </div>
-      </div>
-      <div class="col col-users">
-        <div class="counts-wrap">
-          <div class="counts-icon">
-            <div class="counts-users">
-
+        <div class="col col-instal">
+            <div class="counts-wrap">
+                <div class="counts-icon">
+                    <div class="counts-instal"></div>
+                </div>
+                <div class="counts-text">
+                    30000+<br>Free Install
+                </div>
             </div>
-          </div>
-          <div class="counts-text">
-            40000+<br>
-            Pro Users
-          </div>
         </div>
-      </div>
+        <div class="col col-users">
+            <div class="counts-wrap">
+                <div class="counts-icon">
+                    <div class="counts-users"></div>
+                </div>
+                <div class="counts-text">
+                    40000+<br>Pro Users
+                </div>
+            </div>
+        </div>
     </div>
-  
-  </section>
-
-  <section class="services">
+</section>
+<section class="services">
     <div class="container">
-      <h2 class="title">Services</h2>      
-      <div class="descr">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud
-      </div>
+        <h2 class="title">Services</h2>
+        <div class="descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        </div>
     </div>
     <div class="container">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Statistics
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-statistics">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-statistics"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse-statistics"
+                    >
+                        Statistics
+                    </button>
+                </h2>
+                <div id="flush-collapse-statistics"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading-statistics"
+                     data-bs-parent="#accordionFlushExample"
+                >
+                    <div class="accordion-body">
+                        Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-inbox">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-inbox"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse-inbox"
+                    >
+                        Inbox
+                    </button>
+                </h2>
+                <div id="flush-collapse-inbox"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading-inbox"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                        this being filled with some actual content.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-team">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-team" aria-expanded="false"
+                            aria-controls="flush-collapse-team">
+                        Team
+                    </button>
+                </h2>
+                <div id="flush-collapse-team"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading-team"
+                     data-bs-parent="#accordionFlushExample"
+                >
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at
+                        least at first glance, a bit more representative of how this would look in a real-world
+                        application.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-settings">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-settings"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse-settings"
+                    >
+                        Settings
+                    </button>
+                </h2>
+                <div id="flush-collapse-settings"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading-settings"
+                     data-bs-parent="#accordionFlushExample"
+                >
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at
+                        least at first glance, a bit more representative of how this would look in a real-world
+                        application.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-feed">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-feed"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse-feed"
+                    >
+                        Feed
+                    </button>
+                </h2>
+                <div id="flush-collapse-feed"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading-feed"
+                     data-bs-parent="#accordionFlushExample"
+                >
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at
+                        least at first glance, a bit more representative of how this would look in a real-world
+                        application.
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Inbox
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Team
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-        </div>
-      </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-headingFour" aria-expanded="false" aria-controls="flush-headingFour">
-            Settings
-          </button>
-        </h2>
-        <div id="flush-headingFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-        </div>
-      </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-headingFive" aria-expanded="false" aria-controls="flush-collapseFive">
-            Feed
-          </button>
-        </h2>
-        <div id="flush-headingFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-        </div>
-      </div>
     </div>
-    </div>
-
-  </section>
-
+</section>
 </body>
 </html>
