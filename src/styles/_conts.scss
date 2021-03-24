@@ -1,35 +1,76 @@
 .row-items {
     justify-content: center;
     align-items: center;
-    height: 150px; 
+    
+    
     .col-biss {
         background-color: #80d8ff;
+        .counts-biss {
+            mask-image: url(../resource/icons/counts/busines.svg);
+            width: 35px;
+            height: 35px;
+            background-color: #80d8ff;
+        }
     }
-    .counts-item-business i {
-        color: #80d8ff;
-    }
-    
     .col-down {
         background-color: #82b1ff;
+        .counts-down {
+            background-color:  #82b1ff;
+            mask-image: url(../resource/icons/counts/download.svg);
+            width: 35px;
+            height: 35px;          
+        }
+
     }
-    .counts-item-download i {
-        color: #82b1ff;
-    }
-    
-    .col-install {
+    .col-instal{
         background-color: #b388ff;
+        .counts-instal {
+            background-color:  #b388ff;
+            mask-image: url(../resource/icons/counts/instal.svg);
+            width: 35px;
+            height: 35px;           
+        }
+
     }
-    .counts-item-install i {
-        color: #b388ff;
-    }
-    
     .col-users {
         background-color: #ea80fc;
-    }
-    .counts-item-users i {
-        color: #ea80fc;
+        .counts-users {
+            background-color:  #ea80fc;
+            mask-image: url(../resource/icons/counts/users.svg);
+            width: 35px;
+            height: 30px;         
+        }
     }
 
-    }   
+    .col { 
+        height: 150px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
 
-}
+        .counts-wrap{
+            display: flex;
+            justify-content: center;
+            
+            .counts-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                background-color: #fff;
+                border-radius: 100%;
+                margin-right: 23px;           
+            }
+            .counts-text {
+                font-size: 20px;
+                color: #fff;
+                line-height: 25px;
+                font-weight: 700;
+            }
+
+        }
+    }
+}   
+
