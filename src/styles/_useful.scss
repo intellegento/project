@@ -22,17 +22,22 @@
       }
     }
 
-    .useful-title {
-      color: #061e37;
-      font-size: 20px;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    .useful-descr {
-      color: #78909c;
-      line-height: 20px;
-      text-align: center;
+    .useful-text {
+        .useful-title {
+            color: #061e37;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+          }
+      
+          .useful-descr {
+              color: #78909c;
+              line-height: 20px;
+              text-align: center;
+              margin: 4px auto 20px auto;
+                  
+      
+          }
     }
 
   }
