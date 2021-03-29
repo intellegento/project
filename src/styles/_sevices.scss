@@ -1,57 +1,62 @@
 .services {
-    padding: 100px 0;
-    min-height: 800px;
-    .container-accordion {
-        width: 80%;        
-        margin: 0 auto;
-        padding: 40px 80px;
-    }
-        .accordion-header {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;            
-            height: 50px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            background-color: #ffffff;
-            margin: 0 auto 20px auto;
-            padding: 0 25px 25px 25px;
-            overflow: hidden;
-            cursor: pointer;
-        }
+  padding: 100px 0;
+  min-height: 800px;
 
-    .accordion-item-header {
-        display: flex;
-        font-size: 14px ;
-        color: #061e37;
-        font-weight: 700;
-        text-transform: uppercase;
-        
-        object {
-            width: 20px;
-            height: 20px;
-        }
-        span {
-            margin-left: 20px;
-        }
-    } 
-    
-    .tabs-content {
-        display: flex;
-        padding: 10px auto;
-        .tabs-img {
-            width: 35%;
-            height: 155px;
-            background: url(../resource/statistic.png) center center/cover no-repeat;
-            border-radius: 5px;
-            margin-right: 25px;
+  .container-accordion {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 80px;
+  }
+
+  .accordion-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+    padding: 0 25px 25px 25px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .accordion-item-header {
+    display: flex;
+    font-size: 14px;
+    color: #061e37;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    object {
+      width: 20px;
+      height: 20px;
     }
-        }
-        .tabs-text {
-            width: 63%;
-            color: #061e37;
-            font-weight: 600;
-            line-height: 25px;
-            text-align: left;
-        }
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  .tabs-content {
+    display: flex;
+    padding: 10px 0;
+
+    .tabs-img {
+      width: 35%;
+      height: 155px;
+      background: url(../resource/statistic.png) center center/cover no-repeat;
+      border-radius: 5px;
+      margin-right: 25px;
+    }
+  }
+
+  .tabs-text {
+    width: 63%;
+    color: #061e37;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+  }
 }

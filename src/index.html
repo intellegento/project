@@ -72,14 +72,16 @@
         </div>
     </div>
 </section>
-<section class="useful container">
-    <h2 class="title">Easy &amp; Useful</h2>
-    <div class="subtitle">Project Management Tool</div>
-    <div class="descr">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+<section class="useful">
+    <div class="container">
+        <h2 class="title">Easy &amp; Useful</h2>
+        <div class="subtitle">Project Management Tool</div>
+        <div class="descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        </div>
     </div>
-    <div class="useful-content">
+    <div class="useful-content container">
         <div class="row">
             <div class="col-12 col-md-4 useful-el">
                 <div class="useful-icon">
@@ -173,125 +175,134 @@
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         </div>
     </div>
-    <div class="container container-accordion">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-heading-statistics">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapse-statistics" aria-expanded="false" aria-controls="flush-collapse-statistics">
-                        <div class="accordion-item-header">
-                            <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/statistic.svg')%>"
-                                alt="Statistics">
-                            </object>
-                            <span>Statistics</span>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-statistics">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-statistics" aria-expanded="false"
+                                    aria-controls="flush-collapse-statistics">
+                                <div class="accordion-item-header">
+                                    <object type="image/svg+xml"
+                                            data="<%=require('./resource/icons/services_icons/statistic.svg')%>"
+                                            alt="Statistics">
+                                    </object>
+                                    <span>Statistics</span>
+                                </div>
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-statistics" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading-statistics"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="tabs-content">
+                                <div class="tabs-img"></div>
+                                <div class="tabs-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam,
+                                    <br><br>
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor
+                                    in reprehenderit in
+                                </div>
+                            </div>
                         </div>
-            
-                    </button>
-                </h2>
-                <div id="flush-collapse-statistics" class="accordion-collapse collapse" aria-labelledby="flush-heading-statistics"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="tabs-content">
-                        <div class="tabs-img"></div>
-                        <div class="tabs-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam,
-                            <br><br>
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-inbox">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-inbox"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapse-inbox"
+                            >
+                                Inbox
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-inbox"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading-inbox"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                                the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                                this being filled with some actual content.
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-heading-inbox">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapse-inbox"
-                            aria-expanded="false"
-                            aria-controls="flush-collapse-inbox"
-                    >
-                        Inbox
-                    </button>
-                </h2>
-                <div id="flush-collapse-inbox"
-                     class="accordion-collapse collapse"
-                     aria-labelledby="flush-heading-inbox"
-                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-team">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-team" aria-expanded="false"
+                                    aria-controls="flush-collapse-team">
+                                Team
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-team"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading-team"
+                             data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                                the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                                exciting happening here in terms of content, but just filling up the space to make it look, at
+                                least at first glance, a bit more representative of how this would look in a real-world
+                                application.
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-heading-team">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapse-team" aria-expanded="false"
-                            aria-controls="flush-collapse-team">
-                        Team
-                    </button>
-                </h2>
-                <div id="flush-collapse-team"
-                     class="accordion-collapse collapse"
-                     aria-labelledby="flush-heading-team"
-                     data-bs-parent="#accordionFlushExample"
-                >
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-settings">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-settings"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapse-settings"
+                            >
+                                Settings
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-settings"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading-settings"
+                             data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                                the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                                exciting happening here in terms of content, but just filling up the space to make it look, at
+                                least at first glance, a bit more representative of how this would look in a real-world
+                                application.
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-heading-settings">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapse-settings"
-                            aria-expanded="false"
-                            aria-controls="flush-collapse-settings"
-                    >
-                        Settings
-                    </button>
-                </h2>
-                <div id="flush-collapse-settings"
-                     class="accordion-collapse collapse"
-                     aria-labelledby="flush-heading-settings"
-                     data-bs-parent="#accordionFlushExample"
-                >
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-heading-feed">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapse-feed"
-                            aria-expanded="false"
-                            aria-controls="flush-collapse-feed"
-                    >
-                        Feed
-                    </button>
-                </h2>
-                <div id="flush-collapse-feed"
-                     class="accordion-collapse collapse"
-                     aria-labelledby="flush-heading-feed"
-                     data-bs-parent="#accordionFlushExample"
-                >
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-feed">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-feed"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapse-feed"
+                            >
+                                Feed
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-feed"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading-feed"
+                             data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                                the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                                exciting happening here in terms of content, but just filling up the space to make it look, at
+                                least at first glance, a bit more representative of how this would look in a real-world
+                                application.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
