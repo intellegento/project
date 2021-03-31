@@ -18,9 +18,17 @@
             padding: 0 25px 25px 25px;
             overflow: hidden;
             cursor: pointer;
+            .accordion-button {
+                background-color: transparent;
+                border: none;
+            }
+            .accordion-button:focus {
+                z-index: 3;     
+                border-color: transparent;
+            }
         }
 
-    .accordion-item-header {
+    .accordion-header {
         display: flex;
         font-size: 14px ;
         color: #061e37;
@@ -36,7 +44,7 @@
         }
     } 
     
-    .tabs-content {
+    .accordion-body {
         display: flex;
         padding: 10px auto;
         .tabs-img {
