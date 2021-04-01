@@ -1,18 +1,67 @@
 .services {
-  padding: 100px 0;
-  min-height: 800px;
+  padding: 100px 0 0 0;
+  min-height: 700px;
 
   .container-accordion {
-    width: 80%;
     margin: 0 auto;
-    padding: 40px 80px;
+    padding: 40px 40px;
   }
 
-  .accordion-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50px;
+  .accordion-item {
+    margin-bottom: 20px;
+
+    .accordion-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #ffffff;
+      margin: 0 auto 0 auto;
+      padding: 0 25px 25px 25px;
+      overflow: hidden;
+      cursor: pointer;   
+      font-size: 14px;
+      color: #061e37;
+      font-weight: 700;
+      text-transform: uppercase;
+    
+        object {
+          width: 20px;
+          height: 20px;
+        }
+    
+        span {
+          color: #061e37;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-left: 25px;
+        }
+    
+        .accordion-button:not(.collapsed) {
+          color: #061e37;      
+        }
+      
+  
+      .accordion-button {
+        background-color: transparent;
+        border: none;
+      }
+  
+      .accordion-button:focus {
+        z-index: 3;
+        border-color: transparent;
+        outline: 0;      
+        box-shadow: none;
+      }
+    }
+  }
+
+  
+
+  .accordion-collapse {
+    border: none;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-color: #ffffff;
@@ -20,53 +69,29 @@
     padding: 0 25px 25px 25px;
     overflow: hidden;
     cursor: pointer;
-
-    .accordion-button {
-      background-color: transparent;
-      border: none;
-    }
-
-    .accordion-button:focus {
-      z-index: 3;
-      border-color: transparent;
-    }
-  }
-
-  .accordion-header {
-    display: flex;
-    font-size: 14px;
-    color: #061e37;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    object {
-      width: 20px;
-      height: 20px;
-    }
-
-    span {
-      margin-left: 20px;
-    }
   }
 
   .accordion-body {
     display: flex;
     padding: 10px 0;
 
+
     .tabs-img {
-      width: 35%;
+      
       height: 155px;
       background: url(../resource/statistic.png) center center/cover no-repeat;
       border-radius: 5px;
-      margin-right: 25px;
+      margin: 0 25px 15px 0;
     }
   }
 
-  .tabs-text {
-    width: 63%;
+  .tabs-text {    
     color: #061e37;
     font-weight: 600;
     line-height: 25px;
     text-align: left;
+    
   }
+
+  
 }

@@ -175,86 +175,177 @@
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         </div>
     </div>
-    <div class="container">
-        <div class="accordion" id="accordionExample">
+    <div class="container container-accordion row justify-content-center">
+        <div class="accordion col-xs-12 col-md-12 col-lg-8" id="accordionExample">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-statistics">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-statistics"
-                    aria-expanded="true" aria-controls="collapse-statistics">
-                    <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/statistic.svg')%>" alt="Statistics">
-                    </object>
-                    <span>Statistics</span>
-                </button>
-              </h2>
-              <div id="collapse-statistics" class="accordion-collapse collapse show" aria-labelledby="heading-statistics" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="tabs-img"></div>
-                            <div class="tabs-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam,
-                                <br><br>
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in
-                            </div>
+                <h2 class="accordion-header" id="heading-statistics">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-statistics" aria-expanded="false" aria-controls="collapse-statistics">
+                        <object type="image/svg+xml"
+                            data="<%=require('./resource/icons/services_icons/statistic.svg')%>" alt="Statistics">
+                        </object>
+                        <span>Statistics</span>
+                    </button>
+                </h2>
+                <div id="collapse-statistics" class="accordion-collapse collapse" aria-labelledby="heading-statistics"
+                    data-bs-parent="#accordionExample">
+                    <div class="row accordion-body">
+                        <div class="col-xs-12 col-md-4 tabs-img"></div>
+                        <div class="col-sm-12 col-md-7 tabs-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam,
+                            <br><br>
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor
+                            in reprehenderit in
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-inbox">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-inbox" aria-expanded="false" aria-controls="collapse-inbox">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapse-inbox" class="accordion-collapse collapse" aria-labelledby="heading-inbox" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-team">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-team" aria-expanded="false" aria-controls="collapse-team">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapse-team" class="accordion-collapse collapse" aria-labelledby="heading-team" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <h2 class="accordion-header" id="heading-inbox">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-inbox" aria-expanded="false" aria-controls="collapse-inbox">
+                        <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/inbox.svg')%>"
+                            alt="Inbox">
+                        </object>
+                        <span>Inbox</span>
+                    </button>
+                </h2>
+                <div id="collapse-inbox" class="accordion-collapse collapse" aria-labelledby="heading-inbox"
+                    data-bs-parent="#accordionExample">
+                    <div class="row accordion-body">
+                        <div class="col-xs-12 col-md-4 tabs-img"></div>
+                        <div class="col-sm-12 col-md-7 tabs-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam,
+                            <br><br>
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor
+                            in reprehenderit in
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-    <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-settings">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-settings" aria-expanded="false" aria-controls="collapse-settings">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapse-settings" class="accordion-collapse collapse" aria-labelledby="heading-settings" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-team">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-team" aria-expanded="false" aria-controls="collapse-team">
+                        <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/Team.svg')%>"
+                            alt="Team">
+                        </object>
+                        <span>Team</span>
+                    </button>
+                </h2>
+                <div id="collapse-team" class="accordion-collapse collapse" aria-labelledby="heading-team"
+                    data-bs-parent="#accordionExample">
+                    <div class="row accordion-body">
+                        <div class="col-xs-12 col-md-4 tabs-img"></div>
+                        <div class="col-sm-12 col-md-7 tabs-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam,
+                            <br><br>
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor
+                            in reprehenderit in
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-    <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-feed">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-feed" aria-expanded="false" aria-controls="collapse-feed">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapse-feed" class="accordion-collapse collapse" aria-labelledby="heading-feed" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-settings">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-settings" aria-expanded="false" aria-controls="collapse-settings">
+                        <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/setting.svg')%>"
+                            alt="Settings">
+                        </object>
+                        <span>Settings</span>
+                    </button>
+                </h2>
+                <div id="collapse-settings" class="accordion-collapse collapse" aria-labelledby="heading-settings"
+                    data-bs-parent="#accordionExample">
+                    <div class="row accordion-body">
+                        <div class="col-xs-12 col-md-4 tabs-img"></div>
+                        <div class="col-sm-12 col-md-7 tabs-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam,
+                            <br><br>
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor
+                            in reprehenderit in
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-feed">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-feed" aria-expanded="false" aria-controls="collapse-feed">
+                        <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/feed.svg')%>"
+                            alt="Feed">
+                        </object>
+                        <span>Feed</span>
+                    </button>
+                </h2>
+                <div id="collapse-feed" class="accordion-collapse collapse" aria-labelledby="heading-feed"
+                    data-bs-parent="#accordionExample">
+                    <div class="row accordion-body">
+                        <div class="col-xs-12 col-md-4 tabs-img"></div>
+                        <div class="col-sm-12 col-md-7 tabs-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam,
+                            <br><br>
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor
+                            in reprehenderit in
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 </section>
 
-<section class="comment">
-    
+<section class="container-fluid container-fluid-comment">
+    <div class="container container-comment">
+        <div class="row row-comment">
+            <div class="col col-comment-title">
+                <h2 class="comment-title">What our customers<br>
+                    have to say about us.
+                </h2>
+                <div class="comment-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna</div>
+                <button class="comment-btn">Get started</button>
+            </div>
+            <div class="col col-comment-comment">
+                <div class="comment-item">
+                    <div class="comment-icon" style="background: url(<%=require('./resource/user-img/comments/97.jpg')%>) center center/cover no-repeat;"></div>
+                    <div class="comment-content">
+                        <div class="comment-name">John Doe</div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea</div>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-icon" style="background: url(<%=require('./resource/user-img/comments/12.jpg')%>) center center/cover no-repeat;"></div>
+                    <div class="comment-content">
+                        <div class="comment-name">Khalessi</div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </section>
 </body>
 </html>
