@@ -1,0 +1,7 @@
+@mixin media($screenSizes...) {
+  @each $screenSize in $screenSizes {
+    @media screen and (max-width: $screenSize) {
+      @content;
+    }
+  }
+}
