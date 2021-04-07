@@ -1,0 +1,50 @@
+.contact {
+    background-color: #fafafa;
+    padding: 50px 0 100px;
+
+    .title {
+        color: #061e37;
+        font-size: 45px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .descr {
+        color: #b0bec5;
+        line-height: 25px;
+        text-align: center;
+        margin: 24px auto 0 auto;
+        width: 75%;
+    }
+
+    .form-wrap {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        
+
+        .form-input {            
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #061e37;
+            color: #061e37;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0 20px 0 20px;
+            margin: 0 20px 0 20px;
+        }
+    }
+
+    .form-massage {       
+        height: 150px;
+        border-radius: 5px;
+        border: 1px solid #061e37;
+        padding: 20px;
+        color: #061e37;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px;
+        resize: none;
+    }
+    
+}
