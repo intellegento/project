@@ -458,67 +458,87 @@
     <div class="descr descr-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, voluptatum quae facere
         magnam culpa minus hic repellat fuga amet, magni beatae sit praesentium dolorum, ullam quod cumque nesciunt iure
         officia.</div>
-        <div class="contact-content">
-            <form class="container-md">            
-                <div class="row form-wrap">
-                    <input type="text" name="firstName" class="col-4 form-input" placeholder=" First Name" required="">
-                    <input type="text" name="lastName" class="col-4 form-input" placeholder="Last Name" required="">
+        <div class="container-sm form-contact">
+            <form class="row col-6 gy-2 gx-3">
+                <div class="col-md-6">                 
+                  <input type="text" class="form-control" placeholder="Fist Name">
                 </div>
-                <div class="row form-wrap">
-                    <input type="email" name="email" class="col-4 form-input" placeholder="E-mail" required="">
-                    <input type="tel" name="tel" class="col-4 form-input" placeholder="Tel" required="">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Last Name">
                 </div>
-                <div class="row form-wrap">
-                    <textarea name="massage" class="col-8 form-massage" placeholder="Massage"></textarea>
+                <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required="">
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">subscribe to the newsletter</label>
+                <div class="col-md-6">
+                    <input type="tel" name="tel" class="form-control" placeholder="Tel" required="">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+                <div class="col-md-12">
+                    <textarea name="massage" class="form-control form-massage" placeholder="Massage"></textarea>
+                </div>
+               
+                <div class="form-send">
+                    <div class="col-lg-9 col-md-8 col-xs-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                              subscribe to the newsletter
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-xs-12">
+                        <button type="submit" class="btn btn-primary form-btn">send</button>
+                      </div>
+                </div>
+              </form>
+            </div>
     </div>
 </section>
 
 <footer class="footer">
-    <div class="container">
-        <div class="footer-wrap">
-            <div class="footer-first">
-                <a href="#" class="logo">
-                    <div class="logo-wrap">
-                        <img class="logo-img" src="icons/logo/Shape_1.svg" alt="logo">
-                        <div class="logo-text">
-                            dart <br>
-                            <span>service manager</span>
-                        </div>
-                    </div>
+    <div class="container dark">
+        <div class="row">
+            <div class="col">
+                <a class="navbar-brand" href="#">
+                    <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
                 </a>
-                <div class="footer-submenu">
-                    <a href="#">Privecy Policy</a>
-                    <div></div>
-                    <a href="#">About Us</a>
-                    <div></div>
-                    <a href="#">About Us</a>
-                </div>
-            </div>
-            <div class="footer-primary">
-                <nav class="nav nav-footer">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#home">Home</a></li>
-                        <li class="nav-item"><a href="#useful">Useful</a></li>
-                        <li class="nav-item"><a href="#service">Service</a></li>
-                        <li class="nav-item"><a href="#team">Our Team</a></li>                            
-                        <li class="nav-item nav-item-margin-none"><a href="#contact">Contacts</a></li>
-                    </ul>
-                </nav>
+            </div>            
+            <div class="col">
                 <div class="footer-links">
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-behance"></i></a>
-                </div>
+                </div>               
+            </div>
+            <div class="col">
+                <div class="footer-submenu">
+                    <a href="#">Privecy Policy</a>
+                    <div></div>
+                    <a href="#">About Us</a>
+                    <div></div>
+                    <a href="#">About Us</a>
+                </div>               
+            </div>
+            <div class="col">                
+                <ul>
+                    <li class="nav-item-footer">
+                        <a class="nav-link-footer" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-footer" href="#">Useful</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a class="nav-link-footer" href="#">Services</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a class="nav-link-footer" href="#">Our Team</a>
+                    </li>
+                    <li class="nav-item-footer">
+                        <a class="nav-link-footer" href="#">Contacts</a>
+                    </li>
+                </ul>               
+            </div>            
             </div>
         </div>
     </div>

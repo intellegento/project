@@ -17,34 +17,40 @@
         width: 75%;
     }
 
-    .form-wrap {
-        margin-top: 20px;
+    .form-contact{
         display: flex;
         justify-content: center;
-        
-
-        .form-input {            
-            height: 50px;
-            border-radius: 5px;
-            border: 1px solid #061e37;
-            color: #061e37;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 0 20px 0 20px;
-            margin: 0 20px 0 20px;
-        }
+        margin-top: 20px;
     }
+
+    
 
     .form-massage {       
-        height: 150px;
-        border-radius: 5px;
-        border: 1px solid #061e37;
-        padding: 20px;
-        color: #061e37;
-        font-size: 14px;
-        font-weight: 500;
-        margin: 20px;
-        resize: none;
+        height: 150px;        
     }
+
+    .form-send {        
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .form-btn {
+                border: none;
+                width: 130px;
+                height: 50px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                background-color: #1de9b6;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: all .2s linear;
+            }
+        }
+    
+
+    
     
 }
