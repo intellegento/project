@@ -1,6 +1,6 @@
 .container-fluid-header {
   background: url(../resource/promo-bg.jpg) center center/cover no-repeat;
-  min-height: 580px;
+  min-height: 80vh;
   padding: 50px 0;
 
   .navbar-nav {
@@ -9,16 +9,19 @@
 
   .nav-item {
     padding-right: 25px;
+
+    .nav-link {
+      color: $textLight;
+      font-weight: 600;
+      transition: color .2s linear;
+
+      &:hover {
+        color: #061e37;
+      }
+    }
   }
 
-  .nav-item > .nav-link {
-    color: $textLight;
-    font-weight: 600;
-  }
-
-  .nav-item > .nav-link:hover {
-    color: rgb(94, 93, 93);
-  }
+  
 
   .btn {
     color: $textLight;
@@ -28,6 +31,11 @@
     background: none;
     transition: color .2s linear;
     font-size: 14px;
+
+    &:hover {
+      color: #061e37;
+      border: 1px solid #061e37;
+    } 
   }
 
   .container-promo {
@@ -64,6 +72,11 @@
           border: none;
           margin: 30px 20px 30px 0;
           transition: linear .2s;
+
+          &:hover {
+            background: #061e37;
+            color: #fff;
+          }
         }
       }
     }

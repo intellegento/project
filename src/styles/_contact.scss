@@ -1,56 +1,48 @@
 .contact {
-    background-color: #fafafa;
-    padding: 50px 0 100px;
+  background-color: #fafafa;
+  padding: 50px 0 100px;
 
-    .title {
-        color: #061e37;
-        font-size: 45px;
-        font-weight: 600;
-        text-align: center;
+  .form-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .form-control {        
+        padding: 0.550rem 0.75rem;        
     }
+  }
 
-    .descr {
-        color: #b0bec5;
-        line-height: 25px;
-        text-align: center;
-        margin: 24px auto 0 auto;
-        width: 75%;
+  .form-massage {
+    height: 150px;
+  }
+
+  .form-send {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
     }
+    .form-btn {
+      border: none;
+      width: 130px;
+      height: 50px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      background-color: #1de9b6;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: all 0.2s linear;
 
-    .form-contact{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+      &:hover {
+        background-color: #0eaa83;
+      }
     }
-
-    
-
-    .form-massage {       
-        height: 150px;        
-    }
-
-    .form-send {        
-            margin: 20px 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            .form-btn {
-                border: none;
-                width: 130px;
-                height: 50px;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-                border-radius: 5px;
-                background-color: #1de9b6;
-                color: #ffffff;
-                font-size: 16px;
-                font-weight: 500;
-                text-transform: uppercase;
-                transition: all .2s linear;
-            }
-        }
-    
-
-    
-    
+  }
 }

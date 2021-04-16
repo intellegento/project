@@ -37,7 +37,8 @@
               color: #78909c;
               line-height: 20px;
               text-align: center;
-              margin: 4px auto 20px auto;        
+              margin: 4px auto 20px auto;
+              
       
           }
           
@@ -59,5 +60,9 @@
     font-style: normal;
     text-transform: uppercase;
     transition: all .3s linear;
+
+    &:hover {
+      background-color: #0eaa83;
+    }
   }
 }

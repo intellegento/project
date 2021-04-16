@@ -10,14 +10,15 @@
 </head>
 
 <body>
-<section class="container-fluid container-fluid-header">
+<section class="container-fluid container-fluid-header" id="home">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container container-fluid-nav">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
             </a>
             <button class="navbar-toggler"
                     type="button"
+                    data-bs-placement="bottom"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02"
@@ -29,19 +30,19 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Useful</a>
+                        <a class="nav-link" href="#useful">Useful</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#team">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
                 <button class="btn btn-outline-success" type="button">Sign Up</button>
@@ -73,7 +74,7 @@
         </div>
     </div>
 </section>
-<section class="useful">
+<section class="useful" id="useful">
     <div class="container">
         <h2 class="title">Easy &amp; Useful</h2>
         <div class="subtitle">Project Management Tool</div>
@@ -83,8 +84,8 @@
         </div>
     </div>
     <div class="useful-content container">
-        <div class="row">
-            <div class="col-12 col-md-4 useful-el">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-3 useful-el">
                 <div class="useful-icon">
                     <img class="calendar" src="<%=require('./resource/icons/calendar.svg')%>" alt="Calendar">
                 </div>
@@ -96,7 +97,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 useful-el">
+            <div class="col-12 col-md-3 useful-el">
                 <div class="useful-icon">
                     <img class="user" src="<%=require('./resource/icons/user.svg')%>" alt="User">
                 </div>
@@ -108,7 +109,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 useful-el">
+            <div class="col-12 col-md-3 useful-el">
                 <div class="useful-icon">
                     <img class="fire" src="<%=require('./resource/icons/fire.svg')%>" alt="Fire">
                 </div>
@@ -124,7 +125,7 @@
     </div>
     <button class="useful-btn">Get started</button>
 </section>
-<section class="container">
+<section >
     <div class="row row-items">
         <div class="const-col col-xs-12 col-md-6 col-lg-3 col-biss">
             <div class="counts-wrap">
@@ -168,7 +169,7 @@
         </div>
     </div>
 </section>
-<section class="services">
+<section class="services" id="services">
     <div class="container">
         <h2 class="title">Services</h2>
         <div class="descr">
@@ -354,7 +355,7 @@
     </div>
 </section>
 
-<section class="our-team">
+<section class="our-team" id="team">
    <div class="container">
     <h2 class="title">Our Team</h2>
     <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, blanditiis deleniti vel non
@@ -452,7 +453,7 @@
    </div>
 </section>
 
-<section class="contact" id="contact">
+<section class="contact" id="contacts">
     <div class="container">
         <h2 class="title">Contact Us</h2>
     <div class="descr descr-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, voluptatum quae facere
@@ -460,8 +461,8 @@
         officia.</div>
         <div class="container-sm form-contact">
             <form class="row col-6 gy-2 gx-3">
-                <div class="col-md-6">                 
-                  <input type="text" class="form-control" placeholder="Fist Name">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Fist Name">
                 </div>
                 <div class="col-md-6">
                     <input type="text" class="form-control" placeholder="Last Name">
@@ -475,42 +476,46 @@
                 <div class="col-md-12">
                     <textarea name="massage" class="form-control form-massage" placeholder="Massage"></textarea>
                 </div>
-               
+        
                 <div class="form-send">
                     <div class="col-lg-9 col-md-8 col-xs-12">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">
-                              subscribe to the newsletter
-                          </label>
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                subscribe to the newsletter
+                            </label>
                         </div>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-xs-12">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-12">
                         <button type="submit" class="btn btn-primary form-btn">send</button>
-                      </div>
+                    </div>
                 </div>
-              </form>
-            </div>
+            </form>
+        </div>
     </div>
 </section>
 
 <footer class="footer">
     <div class="container dark">
-        <div class="row">
+        <div class="row justify-content-between">
             <div class="col">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
                 </a>
-            </div>            
-            <div class="col">
-                <div class="footer-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                </div>               
-            </div>
+            </div> 
+            <div class="col">                
+                <nav class="nav-footer">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#useful">Useful</a></li>
+                        <li class="nav-item"><a href="#service">Service</a></li>
+                        <li class="nav-item"><a href="#team">Our Team</a></li>                            
+                        <li class="nav-item nav-item-margin-none"><a href="#contact">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>                     
+        </div>
+        <div class="row justify-content-between">
             <div class="col">
                 <div class="footer-submenu">
                     <a href="#">Privecy Policy</a>
@@ -520,28 +525,19 @@
                     <a href="#">About Us</a>
                 </div>               
             </div>
-            <div class="col">                
-                <ul>
-                    <li class="nav-item-footer">
-                        <a class="nav-link-footer" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link-footer" href="#">Useful</a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a class="nav-link-footer" href="#">Services</a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a class="nav-link-footer" href="#">Our Team</a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a class="nav-link-footer" href="#">Contacts</a>
-                    </li>
-                </ul>               
-            </div>            
+            <div class="col">
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </footer>
+
+
 </body>
 </html>
