@@ -12,58 +12,56 @@
 
     .accordion-header {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
       height: 50px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       background-color: #ffffff;
       margin: 0 auto 0 auto;
-      padding: 0 25px 25px 25px;
+      padding: 25px;
       overflow: hidden;
-      cursor: pointer;   
+      cursor: pointer;
       font-size: 14px;
       color: #061e37;
       font-weight: 700;
       text-transform: uppercase;
-    
-        object {
-          width: 20px;
-          height: 20px;
-        }
-    
-        span {
-          color: #061e37;
-          font-weight: 700;
-          text-transform: uppercase;
-          margin-left: 25px;
-        }
-    
-        .accordion-button:not(.collapsed) {
-          color: #061e37;      
-        }
-      
-  
-      .accordion-button {
-        background-color: transparent;
+
+      &.accordion-button {
+        //background-color: transparent;
         border: none;
+
+        &:not(.collapsed) {
+          color: #061e37;
+          border-radius: 5px 5px 0 0;
+        }
+
+        //&:focus {
+        //  z-index: 3;
+        //  border-color: transparent;
+        //  outline: 0;
+        //  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        //}
       }
-  
-      .accordion-button:focus {
-        z-index: 3;
-        border-color: transparent;
-        outline: 0;      
-        box-shadow: none;
+
+      object {
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        color: #061e37;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 25px;
       }
     }
   }
 
-  
 
   .accordion-collapse {
     border: none;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     background-color: #ffffff;
     margin: 0 auto 20px auto;
     padding: 0 25px 0 25px;
@@ -77,7 +75,7 @@
 
 
     .tabs-img {
-      
+
       height: 155px;
       background: url(../resource/statistic.png) center center/cover no-repeat;
       border-radius: 5px;
@@ -85,13 +83,11 @@
     }
   }
 
-  .tabs-text {    
+  .tabs-text {
     color: #061e37;
     font-weight: 600;
     line-height: 25px;
     text-align: left;
-    
-  }
 
-  
+  }
 }
