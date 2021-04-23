@@ -10,6 +10,10 @@
 </head>
 
 <body>
+
+    
+
+
 <section class="container-fluid container-fluid-header" id="home">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container container-fluid-nav">
@@ -20,10 +24,11 @@
                     type="button"
                     data-bs-placement="bottom"
                     data-bs-toggle="collapse"
+                    data-toggle="dropdown"
                     data-bs-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02"
                     aria-expanded="false"
-                    aria-label="Toggle navigation"
+                    aria-label="Toggle navigation"                    
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -60,7 +65,8 @@
                         itaque commodi maiores quas.
                     </div>
                     <div class="promo-btns">
-                        <button class="promo-btn" id="buyNowBtn" name="Buy now" type="button">Buy Now</button>
+                        <button class="promo-btn" data-toggle="modal" data-target="#exampleModal" name="Buy now" type="button">Buy Now</button>
+                        
                         <button class="promo-btn" name="Try for free" type="button">Try for free</button>
                     </div>
                 </div>
@@ -180,7 +186,8 @@
     <div class="container container-accordion row justify-content-center">
         <div class="accordion col-xs-12 col-md-12 col-lg-8" id="accordionExample">
             <div class="accordion-item">
-                <button class="accordion-button accordion-header" id="heading-statistics" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button accordion-header" id="heading-statistics" type="button" 
+                data-bs-toggle="collapse"
                         data-bs-target="#collapse-statistics" aria-expanded="false"
                         aria-controls="collapse-statistics">
                     <object type="image/svg+xml"
@@ -188,7 +195,8 @@
                     </object>
                     <span>Statistics</span>
                 </button>
-                <div id="collapse-statistics" class="accordion-collapse collapse show" aria-labelledby="heading-statistics"
+                <div id="collapse-statistics" class="accordion-collapse collapse show" 
+                aria-labelledby="heading-statistics"
                     data-bs-parent="#accordionExample">
                     <div class="row accordion-body">
                         <div class="col-xs-12 col-md-4 tabs-img"></div>
@@ -205,15 +213,16 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <button class="accordion-button accordion-header collapsed" id="heading-inbox" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-inbox" aria-expanded="false" aria-controls="collapse-inbox">
-                    <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/inbox.svg')%>"
-                            alt="Inbox">
+                <button class="accordion-button accordion-header collapsed" id="heading-inbox" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse-inbox" aria-expanded="false" 
+                    aria-controls="collapse-inbox">
+                    <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/inbox.svg')%>" 
+                        alt="Inbox">
                     </object>
                     <span>Inbox</span>
                 </button>
                 <div id="collapse-inbox" class="accordion-collapse collapse" aria-labelledby="heading-inbox"
-                     data-bs-parent="#accordionExample">
+                    data-bs-parent="#accordionExample">
                     <div class="row accordion-body">
                         <div class="col-xs-12 col-md-4 tabs-img"></div>
                         <div class="col-sm-12 col-md-7 tabs-text">
@@ -229,17 +238,16 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-team">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-team" aria-expanded="false" aria-controls="collapse-team">
-                        <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/Team.svg')%>"
-                                alt="Team">
-                        </object>
-                        <span>Team</span>
-                    </button>
-                </h2>
+                <button class="accordion-button accordion-header collapsed" id="heading-team" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse-team" aria-expanded="false" 
+                    aria-controls="collapse-team">
+                    <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/Team.svg')%>" 
+                        alt="Team">
+                    </object>
+                    <span>Team</span>
+                </button>
                 <div id="collapse-team" class="accordion-collapse collapse" aria-labelledby="heading-team"
-                     data-bs-parent="#accordionExample">
+                    data-bs-parent="#accordionExample">
                     <div class="row accordion-body">
                         <div class="col-xs-12 col-md-4 tabs-img"></div>
                         <div class="col-sm-12 col-md-7 tabs-text">
@@ -255,17 +263,15 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-settings">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-settings" aria-expanded="false" aria-controls="collapse-settings">
-                        <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/setting.svg')%>"
-                                alt="Settings">
-                        </object>
-                        <span>Settings</span>
-                    </button>
-                </h2>
+                <button class="accordion-button accordion-header collapsed" id="heading-settings" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse-settings" aria-expanded="false"
+                    aria-controls="collapse-settings">
+                    <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/setting.svg')%>" alt="Settings">
+                    </object>
+                    <span>Settings</span>
+                </button>
                 <div id="collapse-settings" class="accordion-collapse collapse" aria-labelledby="heading-settings"
-                     data-bs-parent="#accordionExample">
+                    data-bs-parent="#accordionExample">
                     <div class="row accordion-body">
                         <div class="col-xs-12 col-md-4 tabs-img"></div>
                         <div class="col-sm-12 col-md-7 tabs-text">
@@ -281,9 +287,9 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-feed">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-feed" aria-expanded="false" aria-controls="collapse-feed">
+                <button class="accordion-button accordion-header collapsed" id="heading-settings" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse-feed" aria-expanded="false"
+                    aria-controls="collapse-feed">
                         <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/feed.svg')%>"
                                 alt="Feed">
                         </object>
@@ -456,17 +462,17 @@
         magnam culpa minus hic repellat fuga amet, magni beatae sit praesentium dolorum, ullam quod cumque nesciunt iure
         officia.</div>
         <div class="container-sm form-contact">
-            <form class="row col-6 gy-2 gx-3">
-                <div class="col-md-6">
+            <form class="row col-lg-6 col-xs-8 gy-2 gx-3 ">
+                <div class="col-lg-6 col-xs-12">
                     <input type="text" class="form-control" placeholder="Fist Name">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-xs-12">
                     <input type="text" class="form-control" placeholder="Last Name">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-xs-12">
                     <input type="email" name="email" class="form-control" placeholder="E-mail" required="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-xs-12">
                     <input type="tel" name="tel" class="form-control" placeholder="Tel" required="">
                 </div>
                 <div class="col-md-12">
@@ -490,6 +496,28 @@
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer class="footer">
     <div class="container dark">
@@ -533,6 +561,9 @@
         </div>
     </div>
 </footer>
+
+  
+  
 
 
 </body>

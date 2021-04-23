@@ -27,7 +27,6 @@
       text-transform: uppercase;
 
       &.accordion-button {
-        //background-color: transparent;
         border: none;
 
         &:not(.collapsed) {
@@ -35,12 +34,7 @@
           border-radius: 5px 5px 0 0;
         }
 
-        //&:focus {
-        //  z-index: 3;
-        //  border-color: transparent;
-        //  outline: 0;
-        //  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-        //}
+       
       }
 
       object {
