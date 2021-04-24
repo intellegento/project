@@ -13,10 +13,10 @@
     .nav-link {
       color: $textLight;
       font-weight: 600;
-      transition: color .2s linear;
+      transition: all .2s linear;
 
       &:hover {
-        color: #061e37;
+        text-decoration: underline;
       }
     }
   }
@@ -133,3 +133,23 @@
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    right: 10vw;
+    top: 50px;
+    position: absolute;
+    background-color: #061e37;
+    opacity: .85;
+    min-width: 150px;
+    height: 260px;
+    text-align: center;
+    z-index: 5;
+
+    .nav-link:hover {
+      color: #fff;
+    }
+    .nav-link:focus {
+      color: #fff;
+  }
+  }
+}

@@ -10,11 +10,7 @@
 </head>
 
 <body>
-
-    
-
-
-<section class="container-fluid container-fluid-header" id="home">
+    <section class="container-fluid container-fluid-header" id="home">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container container-fluid-nav">
             <a class="navbar-brand" href="#home">
@@ -65,7 +61,7 @@
                         itaque commodi maiores quas.
                     </div>
                     <div class="promo-btns">
-                        <button class="promo-btn" data-toggle="modal" data-target="#exampleModal" name="Buy now" type="button">Buy Now</button>
+                        <button class="promo-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" name="Buy now" type="button">Buy Now</button>
                         
                         <button class="promo-btn" name="Try for free" type="button">Try for free</button>
                     </div>
@@ -80,6 +76,7 @@
         </div>
     </div>
 </section>
+
 <section class="useful" id="useful">
     <div class="container">
         <h2 class="title">Easy &amp; Useful</h2>
@@ -131,6 +128,7 @@
     </div>
     <button class="useful-btn">Get started</button>
 </section>
+
 <section class="container-fluid" >
     <div class="row row-items">
         <div class="const-col col-xs-12 col-md-6 col-lg-3 col-biss">
@@ -175,6 +173,7 @@
         </div>
     </div>
 </section>
+
 <section class="services" id="services">
     <div class="container">
         <h2 class="title">Services</h2>
@@ -287,7 +286,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <button class="accordion-button accordion-header collapsed" id="heading-settings" type="button"
+                <button class="accordion-button accordion-header collapsed" id="heading-feed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapse-feed" aria-expanded="false"
                     aria-controls="collapse-feed">
                         <object type="image/svg+xml" data="<%=require('./resource/icons/services_icons/feed.svg')%>"
@@ -462,20 +461,20 @@
         magnam culpa minus hic repellat fuga amet, magni beatae sit praesentium dolorum, ullam quod cumque nesciunt iure
         officia.</div>
         <div class="container-sm form-contact">
-            <form class="row col-lg-6 col-xs-8 gy-2 gx-3 ">
-                <div class="col-lg-6 col-xs-12">
+            <form class="row col-8 col-lg-6 gy-2 gx-3 ">
+                <div class="col-12 col-sm-6">
                     <input type="text" class="form-control" placeholder="Fist Name">
                 </div>
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-12 col-sm-6">
                     <input type="text" class="form-control" placeholder="Last Name">
                 </div>
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-12 col-sm-6">
                     <input type="email" name="email" class="form-control" placeholder="E-mail" required="">
                 </div>
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-12 col-sm-6">
                     <input type="tel" name="tel" class="form-control" placeholder="Tel" required="">
                 </div>
-                <div class="col-md-12">
+                <div class="col-12">
                     <textarea name="massage" class="form-control form-massage" placeholder="Massage"></textarea>
                 </div>
 
@@ -498,36 +497,33 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
 <footer class="footer">
     <div class="container dark">
-        <div class="row justify-content-between">
-            <div class="col">
+        <div class="row">
+            <div class="col-auto me-auto">
                 <a class="navbar-brand" href="#home">
                     <img src="<%=require('./resource/logotype.svg')%>" alt="Dart Service Management">
                 </a>
             </div>
-            <div class="col">
+            <div class="col-auto">
                 <nav class="nav-footer">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#home">Home</a></li>
@@ -539,8 +535,8 @@
                 </nav>
             </div>
         </div>
-        <div class="row justify-content-between">
-            <div class="col">
+        <div class="row">
+            <div class="col-auto me-auto">
                 <div class="footer-submenu">
                     <a href="#">Privecy Policy</a>
                     <div></div>
@@ -549,7 +545,7 @@
                     <a href="#">About Us</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-auto">
                 <div class="footer-links">
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
