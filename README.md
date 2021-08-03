@@ -1,39 +1,51 @@
-# Webpack-madboiler
+# Проект ///
 
-## Описание
-Простой бойлер с предустановленным и настроенным webpack. Вам подходит этот бойлер, если вы стартуете проект без использования JS-фреймворков и вам нужна настроенная сборка javascript'а.
+### работа с ментором Vladimir Shebarshov
 
-### Фичи
-* Полностью настроенный webpack + dev-server
-* Транспиляция и минификация javascript-кода при помощи babel
-* Поддерживаются все ассеты и различные пути их подключения(импорт в js/scss, подключение в html)
-* Полностью настроенный и готовый к работе scss
-* Настроенный флоу тестов при помощи jest
-* dev-server
+### статус проекта: завершен
 
-## Технологии
-* Javascript
-* Babel
-* Webpack
-* Jest
-* Scss
+### _used technology_
+
+### HTML
+
+![HTML5](https://img.icons8.com/color/50/000000/html-5--v1.png)
+
+### SCSS
+
+![CSS3](https://img.icons8.com/color/48/000000/css3.png)
+
+### Java Script
+
+![JS](https://img.icons8.com/color/48/000000/javascript--v1.png)
+
+### Node.JS
+
+![JS](https://img.icons8.com/color/48/000000/nodejs.png)
+
+### WebPack
+
+![WebPack](https://img.icons8.com/color/48/000000/webpack.png)
 
 ## Запуск
 
 1. Установить зависимости:
+
 ```bash
   # or npm i
   yarn
 ```
 
 2. Запустить dev-сервер:
+
 ```bash
   # or npm run dev
   yarn dev
 ```
+
 Сервер, запущенный на 3030 порту(default), должен автоматически открыться в браузере. Если вам нужно поменять порт, сделайте это в package.json, в секции `scripts` => `dev`
 
 ## Тесты
+
 Для тестирования используется фреймворк `jest`
 
 Для запуска тестов существуют 2 команды: `yarn test` для запуска тестов в watch-режиме и `yarn test:ci` для запуска тестов в CI
@@ -41,12 +53,14 @@
 ## Сборка production-билда
 
 1. Установить зависимости:
+
 ```bash
   # or npm i
   yarn
 ```
 
 2. Запустить сборку:
+
 ```bash
   # or npm run build
   yarn build
