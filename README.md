@@ -26,6 +26,12 @@
 
 ![WebPack](https://img.icons8.com/color/48/000000/webpack.png)
 
+### Bootstarp
+
+![Bootstrap](https://img.icons8.com/color/48/000000/bootstrap.png)
+
+
+
 ## Запуск
 
 1. Установить зависимости:
