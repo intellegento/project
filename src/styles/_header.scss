@@ -1,4 +1,4 @@
-.container-fluid-header {
+.header {
   background: url(../resource/promo-bg.jpg) center center/cover no-repeat;
   min-height: 80vh;
   padding: 50px 0;
@@ -86,6 +86,7 @@
       position: relative;
       display: flex;
 
+<<<<<<< Updated upstream
       .embed-responsive-item {
         border-radius: 5px;
         box-shadow: 0 5px 5px rgba(20, 20, 20, 0.4);
@@ -110,6 +111,12 @@
           height: 50px;
           background: #061e37;
           box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+=======
+      .embed-responsive {        
+        .embed-responsive-item {
+          object-fit: cover;
+          border: 1px solid #061e37;
+>>>>>>> Stashed changes
           border-radius: 5px;
           padding: 16px 17px;
           margin-bottom: 14px;
